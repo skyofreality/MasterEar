@@ -27,6 +27,8 @@ public class XRHandDraw : MonoBehaviour {
     [Header("Debug Visual")]
     [SerializeField] private GameObject tipVisualPrefab;
     private GameObject tipVisualInstance;
+    private bool isDrawingEnabled = false;
+
 
     private float palmOpenTimer = 0f;
     private Vector3 lastHandPosition = Vector3.zero;
@@ -60,6 +62,10 @@ public class XRHandDraw : MonoBehaviour {
         }
 
         if (intexfinger == null)
+            return;
+
+        
+        if (!isDrawingEnabled)
             return;
 
         CheckPinchState();
@@ -181,6 +187,11 @@ public class XRHandDraw : MonoBehaviour {
                 Destroy(tube.gameObject);
             }
         }
+    }
+
+    public void ToggleDrawing() {
+        isDrawingEnabled = !isDrawingEnabled;
+        Debug.Log("Drawing " + (isDrawingEnabled ? "Enabled" : "Disabled"));
     }
 
     public void UpdateLineColor(Color color) {
