@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6983395969527374335}
   - component: {fileID: 8477153700509565256}
   - component: {fileID: 4725746965347218695}
+  - component: {fileID: 7045338250082605813}
   m_Layer: 0
   m_Name: fat_top
   m_TagString: Untagged
@@ -161,6 +162,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &7045338250082605813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 70911458785207274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa8be2ef0ec14264584b89d2a9ae4305, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  partName: fat_top
+  snapThreshold: 0.1
 --- !u!1 &732518112484093758
 GameObject:
   m_ObjectHideFlags: 0
@@ -175,6 +190,7 @@ GameObject:
   - component: {fileID: 2124815192181674264}
   - component: {fileID: 353101966110502921}
   - component: {fileID: 8134680486570139800}
+  - component: {fileID: 7042246694664523753}
   m_Layer: 0
   m_Name: styloid_process
   m_TagString: Untagged
@@ -323,6 +339,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &7042246694664523753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 732518112484093758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa8be2ef0ec14264584b89d2a9ae4305, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  partName: styloid_process
+  snapThreshold: 0.1
 --- !u!1 &2211313585785444429
 GameObject:
   m_ObjectHideFlags: 0
@@ -337,6 +367,7 @@ GameObject:
   - component: {fileID: 4113743379843383312}
   - component: {fileID: 5627703335564174381}
   - component: {fileID: 7463434707816501296}
+  - component: {fileID: 6109715158490205254}
   m_Layer: 0
   m_Name: nerve
   m_TagString: Untagged
@@ -483,6 +514,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &6109715158490205254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2211313585785444429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa8be2ef0ec14264584b89d2a9ae4305, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  partName: nerve
+  snapThreshold: 0.1
 --- !u!1 &2499175490641339878
 GameObject:
   m_ObjectHideFlags: 0
@@ -496,6 +541,7 @@ GameObject:
   - component: {fileID: 8241971218718134463}
   - component: {fileID: 4930130705873661794}
   - component: {fileID: 7840153447858535867}
+  - component: {fileID: 4436520155878150078}
   m_Layer: 0
   m_Name: ISDK_HandGrabInteraction
   m_TagString: Untagged
@@ -667,6 +713,18 @@ MonoBehaviour:
       AxisRange:
         Min: 1
         Max: 4
+--- !u!114 &4436520155878150078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2499175490641339878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2d0e44494858254d8503ef277d19626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2655370508866721865
 GameObject:
   m_ObjectHideFlags: 0
@@ -680,6 +738,7 @@ GameObject:
   - component: {fileID: 5281513868938010204}
   - component: {fileID: 6942459190518749629}
   - component: {fileID: 7911634570857222123}
+  - component: {fileID: 3497787657074335943}
   m_Layer: 0
   m_Name: ISDK_HandGrabInteraction
   m_TagString: Untagged
@@ -851,6 +910,18 @@ MonoBehaviour:
       AxisRange:
         Min: 1
         Max: 4
+--- !u!114 &3497787657074335943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2655370508866721865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2d0e44494858254d8503ef277d19626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2821375658973174276
 GameObject:
   m_ObjectHideFlags: 0
@@ -864,6 +935,7 @@ GameObject:
   - component: {fileID: 4388047187917754845}
   - component: {fileID: 5601381666204048682}
   - component: {fileID: 2389451455129004127}
+  - component: {fileID: 8989700296037296167}
   m_Layer: 0
   m_Name: ISDK_HandGrabInteraction
   m_TagString: Untagged
@@ -1035,6 +1107,18 @@ MonoBehaviour:
       AxisRange:
         Min: 1
         Max: 4
+--- !u!114 &8989700296037296167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2821375658973174276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2d0e44494858254d8503ef277d19626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3189427203647172829
 GameObject:
   m_ObjectHideFlags: 0
@@ -1049,6 +1133,7 @@ GameObject:
   - component: {fileID: 5019910621125259915}
   - component: {fileID: 3029503200178875088}
   - component: {fileID: 1972391889150102515}
+  - component: {fileID: 8344234473768365280}
   m_Layer: 0
   m_Name: vein_blue
   m_TagString: Untagged
@@ -1195,6 +1280,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &8344234473768365280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3189427203647172829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa8be2ef0ec14264584b89d2a9ae4305, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  partName: vein_blue
+  snapThreshold: 0.1
 --- !u!1 &3397856579093511297
 GameObject:
   m_ObjectHideFlags: 0
@@ -1209,6 +1308,7 @@ GameObject:
   - component: {fileID: 5733965441087350277}
   - component: {fileID: 7635346642055548660}
   - component: {fileID: 7380662503185756983}
+  - component: {fileID: 5692315754787575901}
   m_Layer: 0
   m_Name: bone
   m_TagString: Untagged
@@ -1356,6 +1456,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &5692315754787575901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3397856579093511297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa8be2ef0ec14264584b89d2a9ae4305, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  partName: bone
+  snapThreshold: 0.1
 --- !u!1 &3496222898853513377
 GameObject:
   m_ObjectHideFlags: 0
@@ -1369,6 +1483,7 @@ GameObject:
   - component: {fileID: 6882173514211516461}
   - component: {fileID: 2450709811946191533}
   - component: {fileID: 8547774090619560845}
+  - component: {fileID: 7194659456172481860}
   m_Layer: 0
   m_Name: ISDK_HandGrabInteraction
   m_TagString: Untagged
@@ -1540,6 +1655,18 @@ MonoBehaviour:
       AxisRange:
         Min: 1
         Max: 4
+--- !u!114 &7194659456172481860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3496222898853513377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2d0e44494858254d8503ef277d19626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3809952045564785727
 GameObject:
   m_ObjectHideFlags: 0
@@ -1553,6 +1680,7 @@ GameObject:
   - component: {fileID: 1879182324396127579}
   - component: {fileID: 3344608337633968504}
   - component: {fileID: 7787597090996745115}
+  - component: {fileID: 6376100981901575541}
   m_Layer: 0
   m_Name: ISDK_HandGrabInteraction
   m_TagString: Untagged
@@ -1724,6 +1852,18 @@ MonoBehaviour:
       AxisRange:
         Min: 1
         Max: 4
+--- !u!114 &6376100981901575541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3809952045564785727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2d0e44494858254d8503ef277d19626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3933673292126869081
 GameObject:
   m_ObjectHideFlags: 0
@@ -1737,6 +1877,7 @@ GameObject:
   - component: {fileID: 8818249118416489849}
   - component: {fileID: 8395974609756335903}
   - component: {fileID: 1245548148686579191}
+  - component: {fileID: 8749461964449815819}
   m_Layer: 0
   m_Name: ISDK_HandGrabInteraction
   m_TagString: Untagged
@@ -1908,6 +2049,18 @@ MonoBehaviour:
       AxisRange:
         Min: 1
         Max: 4
+--- !u!114 &8749461964449815819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3933673292126869081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2d0e44494858254d8503ef277d19626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4832488224769028342
 GameObject:
   m_ObjectHideFlags: 0
@@ -1921,6 +2074,7 @@ GameObject:
   - component: {fileID: 6837682721560800854}
   - component: {fileID: 196385289006562241}
   - component: {fileID: 7024620659600865226}
+  - component: {fileID: 1551500887034849944}
   m_Layer: 0
   m_Name: ISDK_HandGrabInteraction
   m_TagString: Untagged
@@ -2092,6 +2246,18 @@ MonoBehaviour:
       AxisRange:
         Min: 1
         Max: 4
+--- !u!114 &1551500887034849944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4832488224769028342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2d0e44494858254d8503ef277d19626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4841304786799042496
 GameObject:
   m_ObjectHideFlags: 0
@@ -2106,6 +2272,7 @@ GameObject:
   - component: {fileID: 3307446150656677228}
   - component: {fileID: 3171960285683264182}
   - component: {fileID: 7742528503838629904}
+  - component: {fileID: 1971202489809843177}
   m_Layer: 0
   m_Name: snail
   m_TagString: Untagged
@@ -2254,6 +2421,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1971202489809843177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4841304786799042496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa8be2ef0ec14264584b89d2a9ae4305, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  partName: snail
+  snapThreshold: 0.1
 --- !u!1 &4965473469485566948
 GameObject:
   m_ObjectHideFlags: 0
@@ -2267,6 +2448,7 @@ GameObject:
   - component: {fileID: 2255153250628622175}
   - component: {fileID: 3937207422653050086}
   - component: {fileID: 902388458372292159}
+  - component: {fileID: 9081409575917469651}
   m_Layer: 0
   m_Name: ISDK_HandGrabInteraction
   m_TagString: Untagged
@@ -2438,6 +2620,18 @@ MonoBehaviour:
       AxisRange:
         Min: 1
         Max: 4
+--- !u!114 &9081409575917469651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4965473469485566948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2d0e44494858254d8503ef277d19626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5096485765141486587
 GameObject:
   m_ObjectHideFlags: 0
@@ -2604,6 +2798,7 @@ GameObject:
   - component: {fileID: 3557272107571242998}
   - component: {fileID: 8901122855743243599}
   - component: {fileID: 6948392663008961148}
+  - component: {fileID: 6071839567616758668}
   m_Layer: 0
   m_Name: anvil_stirrup
   m_TagString: Untagged
@@ -2751,6 +2946,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &6071839567616758668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5328562265967375140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa8be2ef0ec14264584b89d2a9ae4305, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  partName: anvil_stirrup
+  snapThreshold: 0.1
 --- !u!1 &5680639989779990236
 GameObject:
   m_ObjectHideFlags: 0
@@ -2764,6 +2973,7 @@ GameObject:
   - component: {fileID: 6741493678348265209}
   - component: {fileID: 8138234352336342283}
   - component: {fileID: 3716400922661584539}
+  - component: {fileID: 1679782309478118977}
   m_Layer: 0
   m_Name: ISDK_HandGrabInteraction
   m_TagString: Untagged
@@ -2935,6 +3145,18 @@ MonoBehaviour:
       AxisRange:
         Min: 1
         Max: 4
+--- !u!114 &1679782309478118977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5680639989779990236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2d0e44494858254d8503ef277d19626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6075669008863726218
 GameObject:
   m_ObjectHideFlags: 0
@@ -2948,6 +3170,7 @@ GameObject:
   - component: {fileID: 6873110094721005061}
   - component: {fileID: 6908694999962615851}
   - component: {fileID: 890379365770344782}
+  - component: {fileID: 8581381718620387439}
   m_Layer: 0
   m_Name: ISDK_HandGrabInteraction
   m_TagString: Untagged
@@ -3119,6 +3342,18 @@ MonoBehaviour:
       AxisRange:
         Min: 1
         Max: 4
+--- !u!114 &8581381718620387439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6075669008863726218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2d0e44494858254d8503ef277d19626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6120808613145762157
 GameObject:
   m_ObjectHideFlags: 0
@@ -3133,6 +3368,7 @@ GameObject:
   - component: {fileID: 23938760911517803}
   - component: {fileID: 8787989768763357552}
   - component: {fileID: 6986314632103653745}
+  - component: {fileID: 471315182426178404}
   m_Layer: 0
   m_Name: auditory_tube
   m_TagString: Untagged
@@ -3280,6 +3516,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &471315182426178404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6120808613145762157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa8be2ef0ec14264584b89d2a9ae4305, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  partName: auditory_tube
+  snapThreshold: 0.1
 --- !u!1 &6862525450511622528
 GameObject:
   m_ObjectHideFlags: 0
@@ -3294,6 +3544,7 @@ GameObject:
   - component: {fileID: 6941535314423954360}
   - component: {fileID: 9072265358067632058}
   - component: {fileID: 9072493934295535957}
+  - component: {fileID: 2796292733557023256}
   m_Layer: 0
   m_Name: fat_bottom
   m_TagString: Untagged
@@ -3441,6 +3692,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &2796292733557023256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6862525450511622528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa8be2ef0ec14264584b89d2a9ae4305, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  partName: fat_bottom
+  snapThreshold: 0.1
 --- !u!1 &6895717473620329406
 GameObject:
   m_ObjectHideFlags: 0
@@ -3455,6 +3720,7 @@ GameObject:
   - component: {fileID: 3668721535230485711}
   - component: {fileID: 2590102567707060379}
   - component: {fileID: 379290681541051878}
+  - component: {fileID: 91856944904871408}
   m_Layer: 0
   m_Name: auricle
   m_TagString: Untagged
@@ -3602,6 +3868,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &91856944904871408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6895717473620329406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa8be2ef0ec14264584b89d2a9ae4305, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  partName: auricle
+  snapThreshold: 0.1
 --- !u!1 &6976830395126309096
 GameObject:
   m_ObjectHideFlags: 0
@@ -3615,6 +3895,7 @@ GameObject:
   - component: {fileID: 2175293438864240871}
   - component: {fileID: 4800551836320416478}
   - component: {fileID: 7237272841419308497}
+  - component: {fileID: 8988623490313858755}
   m_Layer: 0
   m_Name: ISDK_HandGrabInteraction
   m_TagString: Untagged
@@ -3786,6 +4067,18 @@ MonoBehaviour:
       AxisRange:
         Min: 1
         Max: 4
+--- !u!114 &8988623490313858755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6976830395126309096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2d0e44494858254d8503ef277d19626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7012334884348130663
 GameObject:
   m_ObjectHideFlags: 0
@@ -3800,6 +4093,7 @@ GameObject:
   - component: {fileID: 486071827092971192}
   - component: {fileID: 7763728300757828154}
   - component: {fileID: 1973087153150118853}
+  - component: {fileID: 8452590998061177562}
   m_Layer: 0
   m_Name: nerve_botoom
   m_TagString: Untagged
@@ -3946,6 +4240,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &8452590998061177562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7012334884348130663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa8be2ef0ec14264584b89d2a9ae4305, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  partName: nerve_botoom
+  snapThreshold: 0.1
 --- !u!1 &7132857820623581764
 GameObject:
   m_ObjectHideFlags: 0
@@ -3959,6 +4267,7 @@ GameObject:
   - component: {fileID: 9111159799397254804}
   - component: {fileID: 5940360790731552566}
   - component: {fileID: 3248347742906964500}
+  - component: {fileID: 9133832057703921719}
   m_Layer: 0
   m_Name: ISDK_HandGrabInteraction
   m_TagString: Untagged
@@ -4130,6 +4439,18 @@ MonoBehaviour:
       AxisRange:
         Min: 1
         Max: 4
+--- !u!114 &9133832057703921719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7132857820623581764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2d0e44494858254d8503ef277d19626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7181139725323233894
 GameObject:
   m_ObjectHideFlags: 0
@@ -4209,6 +4530,7 @@ GameObject:
   - component: {fileID: 8759632669263047111}
   - component: {fileID: 5628145056288819284}
   - component: {fileID: 8223874930288138175}
+  - component: {fileID: 7690542850609421248}
   m_Layer: 0
   m_Name: vein_red
   m_TagString: Untagged
@@ -4355,6 +4677,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &7690542850609421248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7744219036914916667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa8be2ef0ec14264584b89d2a9ae4305, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  partName: vein_red
+  snapThreshold: 0.1
 --- !u!1 &7915747529703446481
 GameObject:
   m_ObjectHideFlags: 0
@@ -4369,6 +4705,7 @@ GameObject:
   - component: {fileID: 8262641098353625244}
   - component: {fileID: 2721387752363718360}
   - component: {fileID: 2868962591697439624}
+  - component: {fileID: 2465589381023325009}
   m_Layer: 0
   m_Name: eardrum
   m_TagString: Untagged
@@ -4516,6 +4853,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &2465589381023325009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7915747529703446481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa8be2ef0ec14264584b89d2a9ae4305, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  partName: eardrum
+  snapThreshold: 0.1
 --- !u!1 &8305140717095437990
 GameObject:
   m_ObjectHideFlags: 0
@@ -4529,6 +4880,7 @@ GameObject:
   - component: {fileID: 8192235687080182219}
   - component: {fileID: 3760081059007548791}
   - component: {fileID: 8568239031393561869}
+  - component: {fileID: 7366305900519397848}
   m_Layer: 0
   m_Name: ISDK_HandGrabInteraction
   m_TagString: Untagged
@@ -4700,6 +5052,18 @@ MonoBehaviour:
       AxisRange:
         Min: 1
         Max: 4
+--- !u!114 &7366305900519397848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8305140717095437990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2d0e44494858254d8503ef277d19626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8508788431968522292
 GameObject:
   m_ObjectHideFlags: 0
@@ -4713,6 +5077,7 @@ GameObject:
   - component: {fileID: 7713979013781108249}
   - component: {fileID: 14006029672181432}
   - component: {fileID: 2550533921280424457}
+  - component: {fileID: 4343554298850408416}
   m_Layer: 0
   m_Name: ISDK_HandGrabInteraction
   m_TagString: Untagged
@@ -4884,6 +5249,18 @@ MonoBehaviour:
       AxisRange:
         Min: 1
         Max: 4
+--- !u!114 &4343554298850408416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8508788431968522292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2d0e44494858254d8503ef277d19626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8774492217601694533
 GameObject:
   m_ObjectHideFlags: 0
@@ -4898,6 +5275,7 @@ GameObject:
   - component: {fileID: 826895750138144237}
   - component: {fileID: 7659046121558509353}
   - component: {fileID: 549841091125173339}
+  - component: {fileID: 5479683269844455569}
   m_Layer: 0
   m_Name: muscle_top
   m_TagString: Untagged
@@ -5044,6 +5422,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &5479683269844455569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8774492217601694533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa8be2ef0ec14264584b89d2a9ae4305, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  partName: muscle_top
+  snapThreshold: 0.1
 --- !u!1 &8989815290128290584
 GameObject:
   m_ObjectHideFlags: 0
@@ -5057,6 +5449,7 @@ GameObject:
   - component: {fileID: 8782880204270072625}
   - component: {fileID: 3759298563024238671}
   - component: {fileID: 5634647936206342899}
+  - component: {fileID: 4522880847499782204}
   m_Layer: 0
   m_Name: ISDK_HandGrabInteraction
   m_TagString: Untagged
@@ -5228,6 +5621,18 @@ MonoBehaviour:
       AxisRange:
         Min: 1
         Max: 4
+--- !u!114 &4522880847499782204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8989815290128290584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2d0e44494858254d8503ef277d19626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &9017281216311461648
 GameObject:
   m_ObjectHideFlags: 0
@@ -5242,6 +5647,7 @@ GameObject:
   - component: {fileID: 4844677038893621511}
   - component: {fileID: 6330867727449852795}
   - component: {fileID: 4865052798406317072}
+  - component: {fileID: 6004954443973895888}
   m_Layer: 0
   m_Name: hammer
   m_TagString: Untagged
@@ -5391,6 +5797,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &6004954443973895888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9017281216311461648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa8be2ef0ec14264584b89d2a9ae4305, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  partName: hammer
+  snapThreshold: 0.1
 --- !u!1 &9172207327276959545
 GameObject:
   m_ObjectHideFlags: 0
@@ -5404,6 +5824,7 @@ GameObject:
   - component: {fileID: 8870218481202347596}
   - component: {fileID: 953875878527334958}
   - component: {fileID: 4538089301068739358}
+  - component: {fileID: 8400468118135701044}
   m_Layer: 0
   m_Name: ISDK_HandGrabInteraction
   m_TagString: Untagged
@@ -5575,6 +5996,18 @@ MonoBehaviour:
       AxisRange:
         Min: 1
         Max: 4
+--- !u!114 &8400468118135701044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9172207327276959545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2d0e44494858254d8503ef277d19626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &9205479259772509133
 GameObject:
   m_ObjectHideFlags: 0
@@ -5589,6 +6022,7 @@ GameObject:
   - component: {fileID: 7382606878556414895}
   - component: {fileID: 5406997402505303167}
   - component: {fileID: 3582351686641919202}
+  - component: {fileID: 2084760736691658050}
   m_Layer: 0
   m_Name: muscle
   m_TagString: Untagged
@@ -5735,3 +6169,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &2084760736691658050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9205479259772509133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa8be2ef0ec14264584b89d2a9ae4305, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  partName: muscle
+  snapThreshold: 0.1
