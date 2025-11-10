@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using DG.Tweening;
 
 public class SnapHandler : MonoBehaviour {
     public string partName;
@@ -34,23 +35,27 @@ public class SnapHandler : MonoBehaviour {
         if (isSnapped) return;
 
         Debug.Log($"Snapping to: {targetTransform.name}");
-
-        transform.position = targetTransform.position;
-        transform.rotation = targetTransform.rotation;
-
         isSnapped = true;
 
         var rb = GetComponent<Rigidbody>();
         if (rb != null) {
             rb.isKinematic = true;
-            Debug.Log(" Rigidbody set to kinematic");
+            rb.linearVelocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero;
+            Debug.Log(" Rigidbody kinematic & stopped");
         }
 
-        var col = GetComponent<Collider>();
-        if (col != null) {
+        Collider col = GetComponent<Collider>();
+        if (col != null)
             col.enabled = false;
-            Debug.Log(" Collider disabled");
-        }
+
+        // Animate position and rotation to target
+        float duration = 0.5f;
+
+        transform.DOMove(targetTransform.position, duration).SetEase(Ease.InOutSine);
+        transform.DORotateQuaternion(targetTransform.rotation, duration).SetEase(Ease.InOutSine);
+
+        // Optional: Add scaling or slight delay if needed
 
         ScoreManager.Instance?.AddPoints(10);
     }
