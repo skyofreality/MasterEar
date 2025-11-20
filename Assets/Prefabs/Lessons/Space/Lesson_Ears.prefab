@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 4725746965347218695}
   - component: {fileID: 7045338250082605813}
   m_Layer: 0
-  m_Name: fat_top
+  m_Name: Fat Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -174,7 +174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa8be2ef0ec14264584b89d2a9ae4305, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  partName: fat_top
+  partName: Fat Top
   snapThreshold: 0.1
 --- !u!1 &667391856380390698
 GameObject:
@@ -231,7 +231,7 @@ MonoBehaviour:
   _twoGrabTransformer: {fileID: 5526170199106919781}
   _targetTransform: {fileID: 7781888534102365068}
   _maxGrabPoints: -1
-  _rigidbody: {fileID: 8731824989384160325}
+  _rigidbody: {fileID: 0}
   _kinematicWhileSelected: 1
   _throwWhenUnselected: 1
 --- !u!114 &6699451097514274449
@@ -251,7 +251,7 @@ MonoBehaviour:
   _maxSelectingInteractors: -1
   _data: {fileID: 0}
   _pointableElement: {fileID: 4256749509102017173}
-  _rigidbody: {fileID: 8731824989384160325}
+  _rigidbody: {fileID: 6050751510132778829}
   _physicsGrabbable: {fileID: 0}
   _resetGrabOnGrabsUpdated: 1
   _scoringModifier:
@@ -292,7 +292,7 @@ MonoBehaviour:
   _maxSelectingInteractors: -1
   _data: {fileID: 0}
   _pointableElement: {fileID: 4256749509102017173}
-  _rigidbody: {fileID: 8731824989384160325}
+  _rigidbody: {fileID: 0}
   _grabSource: {fileID: 0}
   _useClosestPointAsGrabSource: 0
   _releaseDistance: 0
@@ -310,7 +310,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fb178ffcf71a604b91a807295c28184, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _pickablePart: {fileID: 2823736884325622806}
+  _pickablePart: {fileID: 0}
   _positionConstraints:
     ConstraintsAreRelative: 0
     XAxis:
@@ -389,7 +389,7 @@ GameObject:
   - component: {fileID: 8134680486570139800}
   - component: {fileID: 7042246694664523753}
   m_Layer: 0
-  m_Name: styloid_process
+  m_Name: Styloid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -548,7 +548,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa8be2ef0ec14264584b89d2a9ae4305, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  partName: styloid_process
+  partName: Styloid
   snapThreshold: 0.1
 --- !u!1 &1257830831728186255
 GameObject:
@@ -559,8 +559,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6981130150791627303}
+  - component: {fileID: 4283693944332918332}
+  - component: {fileID: 3953473853552013334}
+  - component: {fileID: 6050751510132778829}
+  - component: {fileID: 5913709309224206103}
   m_Layer: 0
-  m_Name: AnvilParent
+  m_Name: 'Incus '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -582,6 +586,91 @@ Transform:
   - {fileID: 7781888534102365068}
   m_Father: {fileID: 9196631139640407419}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4283693944332918332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257830831728186255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c113c92ce6448f0af4366f640f2ce8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data:
+    name: 'Incus '
+    detail: The anvil (incus) and stirrup (stapes) are tiny bones in the middle ear
+      that help transmit sound vibrations from the eardrum to the inner ear.
+  originalLocalPosition: {x: 0, y: 0, z: 0}
+  originalLocalEulerAngles: {x: 0, y: 0, z: 0}
+  originalLocalScale: {x: 0, y: 0, z: 0}
+  boxCollider: {fileID: 0}
+  rigidBody: {fileID: 0}
+  explosionOffset: {x: 0, y: 0, z: 0.5}
+  explosionDirection: {x: 0, y: 0, z: 0}
+--- !u!65 &3953473853552013334
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257830831728186255}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &6050751510132778829
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257830831728186255}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &5913709309224206103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257830831728186255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa8be2ef0ec14264584b89d2a9ae4305, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  partName: 'Incus '
+  snapThreshold: 0.1
 --- !u!1 &2049002313884819539
 GameObject:
   m_ObjectHideFlags: 0
@@ -591,8 +680,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4654468487675509951}
+  - component: {fileID: 1439065987493459343}
+  - component: {fileID: 8541849474578778490}
+  - component: {fileID: 9095288881400987593}
+  - component: {fileID: 8294106709599364883}
   m_Layer: 0
-  m_Name: Stirrup Parent
+  m_Name: Stapes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -614,6 +707,91 @@ Transform:
   - {fileID: 3335051102052063732}
   m_Father: {fileID: 9196631139640407419}
   m_LocalEulerAnglesHint: {x: 0, y: 0.247, z: -0.496}
+--- !u!114 &1439065987493459343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2049002313884819539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c113c92ce6448f0af4366f640f2ce8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data:
+    name: Stapes
+    detail: The anvil (incus) and stirrup (stapes) are tiny bones in the middle ear
+      that help transmit sound vibrations from the eardrum to the inner ear.
+  originalLocalPosition: {x: 0, y: 0, z: 0}
+  originalLocalEulerAngles: {x: 0, y: 0, z: 0}
+  originalLocalScale: {x: 0, y: 0, z: 0}
+  boxCollider: {fileID: 8569806590889238174}
+  rigidBody: {fileID: 0}
+  explosionOffset: {x: 0, y: 0, z: 0.5}
+  explosionDirection: {x: 0, y: 0, z: 0}
+--- !u!65 &8541849474578778490
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2049002313884819539}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.0031463085, y: 0.0025381965, z: 0.00235512}
+  m_Center: {x: 0.0005892213, y: 0.0006573513, z: 0.000026581713}
+--- !u!54 &9095288881400987593
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2049002313884819539}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &8294106709599364883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2049002313884819539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa8be2ef0ec14264584b89d2a9ae4305, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  partName: Stapes
+  snapThreshold: 0.1
 --- !u!1 &2211313585785444429
 GameObject:
   m_ObjectHideFlags: 0
@@ -1396,7 +1574,7 @@ GameObject:
   - component: {fileID: 1972391889150102515}
   - component: {fileID: 8344234473768365280}
   m_Layer: 0
-  m_Name: vein_blue
+  m_Name: internal jugular vein
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1431,7 +1609,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data:
-    name: Vein Blue
+    name: internal jugular vein
     detail: ' internal jugular vein'
   originalLocalPosition: {x: 0, y: 0, z: 0}
   originalLocalEulerAngles: {x: 0, y: 0, z: 0}
@@ -1553,7 +1731,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa8be2ef0ec14264584b89d2a9ae4305, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  partName: vein_blue
+  partName: internal jugular vein
   snapThreshold: 0.1
 --- !u!1 &3397856579093511297
 GameObject:
@@ -1571,7 +1749,7 @@ GameObject:
   - component: {fileID: 7380662503185756983}
   - component: {fileID: 5692315754787575901}
   m_Layer: 0
-  m_Name: bone
+  m_Name: Bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1729,7 +1907,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa8be2ef0ec14264584b89d2a9ae4305, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  partName: bone
+  partName: Bone
   snapThreshold: 0.1
 --- !u!1 &3496222898853513377
 GameObject:
@@ -1923,203 +2101,6 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3496222898853513377}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2d0e44494858254d8503ef277d19626, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &3809952045564785727
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6439136346705680878}
-  - component: {fileID: 7241059603108159844}
-  - component: {fileID: 1879182324396127579}
-  - component: {fileID: 3344608337633968504}
-  - component: {fileID: 7787597090996745115}
-  - component: {fileID: 6376100981901575541}
-  m_Layer: 0
-  m_Name: ISDK_HandGrabInteraction
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6439136346705680878
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3809952045564785727}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 4915360562493264075}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7241059603108159844
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3809952045564785727}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _transferOnSecondSelection: 0
-  _addNewPointsToFront: 0
-  _forwardElement: {fileID: 0}
-  _oneGrabTransformer: {fileID: 7787597090996745115}
-  _twoGrabTransformer: {fileID: 7787597090996745115}
-  _targetTransform: {fileID: 4915360562493264075}
-  _maxGrabPoints: -1
-  _rigidbody: {fileID: 6948392663008961148}
-  _kinematicWhileSelected: 1
-  _throwWhenUnselected: 1
---- !u!114 &1879182324396127579
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3809952045564785727}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9a7676b01585ce43908639a27765dfc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactorFilters: []
-  _maxInteractors: -1
-  _maxSelectingInteractors: -1
-  _data: {fileID: 0}
-  _pointableElement: {fileID: 7241059603108159844}
-  _rigidbody: {fileID: 6948392663008961148}
-  _physicsGrabbable: {fileID: 0}
-  _resetGrabOnGrabsUpdated: 1
-  _scoringModifier:
-    _positionRotationWeight: 0.5
-  _slippiness: 0
-  _supportedGrabTypes: 3
-  _pinchGrabRules:
-    _thumbRequirement: 0
-    _indexRequirement: 1
-    _middleRequirement: 1
-    _ringRequirement: 0
-    _pinkyRequirement: 0
-    _unselectMode: 1
-  _palmGrabRules:
-    _thumbRequirement: 1
-    _indexRequirement: 0
-    _middleRequirement: 2
-    _ringRequirement: 2
-    _pinkyRequirement: 1
-    _unselectMode: 0
-  _movementProvider: {fileID: 0}
-  _handAligment: 0
-  _handGrabPoses: []
---- !u!114 &3344608337633968504
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3809952045564785727}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a1bc992571301d4a9602ac95ef4c71a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactorFilters: []
-  _maxInteractors: -1
-  _maxSelectingInteractors: -1
-  _data: {fileID: 0}
-  _pointableElement: {fileID: 7241059603108159844}
-  _rigidbody: {fileID: 6948392663008961148}
-  _grabSource: {fileID: 0}
-  _useClosestPointAsGrabSource: 0
-  _releaseDistance: 0
-  _resetGrabOnGrabsUpdated: 1
-  _physicsGrabbable: {fileID: 0}
---- !u!114 &7787597090996745115
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3809952045564785727}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4fb178ffcf71a604b91a807295c28184, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _pickablePart: {fileID: 5842507693061822687}
-  _positionConstraints:
-    ConstraintsAreRelative: 0
-    XAxis:
-      ConstrainAxis: 0
-      AxisRange:
-        Min: 0
-        Max: 0
-    YAxis:
-      ConstrainAxis: 0
-      AxisRange:
-        Min: 0
-        Max: 0
-    ZAxis:
-      ConstrainAxis: 0
-      AxisRange:
-        Min: 0
-        Max: 0
-  _rotationConstraints:
-    XAxis:
-      ConstrainAxis: 0
-      AxisRange:
-        Min: 0
-        Max: 0
-    YAxis:
-      ConstrainAxis: 0
-      AxisRange:
-        Min: 0
-        Max: 0
-    ZAxis:
-      ConstrainAxis: 0
-      AxisRange:
-        Min: 0
-        Max: 0
-  _scaleConstraints:
-    ConstraintsAreRelative: 0
-    XAxis:
-      ConstrainAxis: 1
-      AxisRange:
-        Min: 1
-        Max: 4
-    YAxis:
-      ConstrainAxis: 1
-      AxisRange:
-        Min: 1
-        Max: 4
-    ZAxis:
-      ConstrainAxis: 1
-      AxisRange:
-        Min: 1
-        Max: 4
---- !u!114 &6376100981901575541
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3809952045564785727}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b2d0e44494858254d8503ef277d19626, type: 3}
@@ -2535,7 +2516,7 @@ GameObject:
   - component: {fileID: 7742528503838629904}
   - component: {fileID: 1971202489809843177}
   m_Layer: 0
-  m_Name: snail
+  m_Name: Cochlea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2692,7 +2673,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa8be2ef0ec14264584b89d2a9ae4305, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  partName: snail
+  partName: Cochlea
   snapThreshold: 0.1
 --- !u!1 &4965473469485566948
 GameObject:
@@ -2923,7 +2904,6 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 1
   m_Children:
-  - {fileID: 4915360562493264075}
   - {fileID: 6981130150791627303}
   - {fileID: 4654468487675509951}
   - {fileID: 1830188288302134367}
@@ -3045,182 +3025,6 @@ Transform:
   - {fileID: 9196631139640407419}
   m_Father: {fileID: 1446813487555552225}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &5328562265967375140
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4915360562493264075}
-  - component: {fileID: 5842507693061822687}
-  - component: {fileID: 5213141108601678783}
-  - component: {fileID: 3557272107571242998}
-  - component: {fileID: 8901122855743243599}
-  - component: {fileID: 6948392663008961148}
-  - component: {fileID: 6071839567616758668}
-  m_Layer: 0
-  m_Name: anvil_stirrup
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &4915360562493264075
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5328562265967375140}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0.000000106770266, y: 0.000000106770045, z: 0.70710605, w: 0.7071075}
-  m_LocalPosition: {x: 0.014655899, y: -0.013440976, z: 0.04675373}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 6439136346705680878}
-  m_Father: {fileID: 9196631139640407419}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5842507693061822687
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5328562265967375140}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c113c92ce6448f0af4366f640f2ce8e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  data:
-    name: Incus and Stapes
-    detail: The anvil (incus) and stirrup (stapes) are tiny bones in the middle ear
-      that help transmit sound vibrations from the eardrum to the inner ear.
-  originalLocalPosition: {x: 0, y: 0, z: 0}
-  originalLocalEulerAngles: {x: 0, y: 0, z: 0}
-  originalLocalScale: {x: 0, y: 0, z: 0}
-  boxCollider: {fileID: 8901122855743243599}
-  rigidBody: {fileID: 0}
-  explosionOffset: {x: 0, y: 0, z: 0.5}
-  explosionDirection: {x: 0, y: 0, z: 0}
---- !u!33 &5213141108601678783
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5328562265967375140}
-  m_Mesh: {fileID: -6099067285222030026, guid: 69143ec4ad8457140bff1911dfe017e2, type: 3}
---- !u!23 &3557272107571242998
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5328562265967375140}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: ca85c6577666cde4990150bad4961419, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &8901122855743243599
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5328562265967375140}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.010924526, y: 0.009739189, z: 0.004235571}
-  m_Center: {x: -0.0000000016298145, y: -0.000000051455565, z: 0.000000009778887}
---- !u!54 &6948392663008961148
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5328562265967375140}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!114 &6071839567616758668
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5328562265967375140}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa8be2ef0ec14264584b89d2a9ae4305, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  partName: anvil_stirrup
-  snapThreshold: 0.1
 --- !u!1 &5550839209061582651
 GameObject:
   m_ObjectHideFlags: 0
@@ -3355,7 +3159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fb178ffcf71a604b91a807295c28184, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _pickablePart: {fileID: 8498925392221452167}
+  _pickablePart: {fileID: 0}
   _positionConstraints:
     ConstraintsAreRelative: 0
     XAxis:
@@ -3828,7 +3632,7 @@ GameObject:
   - component: {fileID: 6986314632103653745}
   - component: {fileID: 471315182426178404}
   m_Layer: 0
-  m_Name: auditory_tube
+  m_Name: Eustachian tube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3986,7 +3790,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa8be2ef0ec14264584b89d2a9ae4305, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  partName: auditory_tube
+  partName: Eustachian tube
   snapThreshold: 0.1
 --- !u!1 &6862525450511622528
 GameObject:
@@ -4004,7 +3808,7 @@ GameObject:
   - component: {fileID: 9072493934295535957}
   - component: {fileID: 2796292733557023256}
   m_Layer: 0
-  m_Name: fat_bottom
+  m_Name: Fat Bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4162,7 +3966,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa8be2ef0ec14264584b89d2a9ae4305, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  partName: fat_bottom
+  partName: Fat Bottom
   snapThreshold: 0.1
 --- !u!1 &6895717473620329406
 GameObject:
@@ -4180,7 +3984,7 @@ GameObject:
   - component: {fileID: 379290681541051878}
   - component: {fileID: 91856944904871408}
   m_Layer: 0
-  m_Name: auricle
+  m_Name: Auricle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4339,7 +4143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa8be2ef0ec14264584b89d2a9ae4305, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  partName: auricle
+  partName: Auricle
   snapThreshold: 0.1
 --- !u!1 &6976830395126309096
 GameObject:
@@ -4957,7 +4761,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wholePart: {fileID: 0}
   partList:
-  - {fileID: 5842507693061822687}
   - {fileID: 8296311831894109087}
   - {fileID: 7410324748762458511}
   - {fileID: 2670544029352689201}
@@ -4991,7 +4794,7 @@ GameObject:
   - component: {fileID: 8223874930288138175}
   - component: {fileID: 7690542850609421248}
   m_Layer: 0
-  m_Name: vein_red
+  m_Name: Arteries
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5026,7 +4829,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data:
-    name: Vein Red
+    name: Arteries
     detail: Arteries carry oxygen-rich blood from the heart to the body.
   originalLocalPosition: {x: 0, y: 0, z: 0}
   originalLocalEulerAngles: {x: 0, y: 0, z: 0}
@@ -5148,7 +4951,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa8be2ef0ec14264584b89d2a9ae4305, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  partName: vein_red
+  partName: Arteries
   snapThreshold: 0.1
 --- !u!1 &7915747529703446481
 GameObject:
@@ -5166,7 +4969,7 @@ GameObject:
   - component: {fileID: 2868962591697439624}
   - component: {fileID: 2465589381023325009}
   m_Layer: 0
-  m_Name: eardrum
+  m_Name: Tympanic membrane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5324,7 +5127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa8be2ef0ec14264584b89d2a9ae4305, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  partName: eardrum
+  partName: Tympanic membrane
   snapThreshold: 0.1
 --- !u!1 &8305140717095437990
 GameObject:
@@ -5729,7 +5532,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3335051102052063732}
-  - component: {fileID: 8498925392221452167}
   - component: {fileID: 150768603574027184}
   - component: {fileID: 7432375979938369023}
   - component: {fileID: 8569806590889238174}
@@ -5758,29 +5560,6 @@ Transform:
   - {fileID: 7251524410245693708}
   m_Father: {fileID: 4654468487675509951}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8498925392221452167
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8594816763243333170}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c113c92ce6448f0af4366f640f2ce8e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  data:
-    name: Stapes
-    detail: The anvil (incus) and stirrup (stapes) are tiny bones in the middle ear
-      that help transmit sound vibrations from the eardrum to the inner ear.
-  originalLocalPosition: {x: 0, y: 0, z: 0}
-  originalLocalEulerAngles: {x: 0, y: 0, z: 0}
-  originalLocalScale: {x: 0, y: 0, z: 0}
-  boxCollider: {fileID: 8569806590889238174}
-  rigidBody: {fileID: 0}
-  explosionOffset: {x: 0, y: 0, z: 0.5}
-  explosionDirection: {x: 0, y: 0, z: 0}
 --- !u!33 &150768603574027184
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -6080,11 +5859,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7781888534102365068}
-  - component: {fileID: 2823736884325622806}
   - component: {fileID: 6058804591010794641}
   - component: {fileID: 7651076413735258417}
-  - component: {fileID: 8318880850447077429}
-  - component: {fileID: 8731824989384160325}
   - component: {fileID: 7699586370945055572}
   m_Layer: 0
   m_Name: anvil
@@ -6109,29 +5885,6 @@ Transform:
   - {fileID: 4900318696283306731}
   m_Father: {fileID: 6981130150791627303}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2823736884325622806
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8835005278352656822}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c113c92ce6448f0af4366f640f2ce8e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  data:
-    name: 'Incus '
-    detail: The anvil (incus) and stirrup (stapes) are tiny bones in the middle ear
-      that help transmit sound vibrations from the eardrum to the inner ear.
-  originalLocalPosition: {x: 0, y: 0, z: 0}
-  originalLocalEulerAngles: {x: 0, y: 0, z: 0}
-  originalLocalScale: {x: 0, y: 0, z: 0}
-  boxCollider: {fileID: 8318880850447077429}
-  rigidBody: {fileID: 0}
-  explosionOffset: {x: 0, y: 0, z: 0.5}
-  explosionDirection: {x: 0, y: 0, z: 0}
 --- !u!33 &6058804591010794641
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -6185,54 +5938,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &8318880850447077429
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8835005278352656822}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.010924526, y: 0.009739189, z: 0.004235571}
-  m_Center: {x: -0.0000000016298145, y: -0.000000051455565, z: 0.000000009778887}
---- !u!54 &8731824989384160325
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8835005278352656822}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &7699586370945055572
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6460,7 +6165,7 @@ GameObject:
   - component: {fileID: 4865052798406317072}
   - component: {fileID: 6004954443973895888}
   m_Layer: 0
-  m_Name: hammer
+  m_Name: Malleus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6618,7 +6323,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa8be2ef0ec14264584b89d2a9ae4305, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  partName: hammer
+  partName: Malleus
   snapThreshold: 0.1
 --- !u!1 &9172207327276959545
 GameObject:
@@ -6833,7 +6538,7 @@ GameObject:
   - component: {fileID: 3582351686641919202}
   - component: {fileID: 2084760736691658050}
   m_Layer: 0
-  m_Name: muscle
+  m_Name: Tensor tympani muscle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6868,7 +6573,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data:
-    name: Muscle
+    name: Tensor tympani muscle
     detail: Tensor tympani muscle, which helps control eardrum vibrations.
   originalLocalPosition: {x: 0, y: 0, z: 0}
   originalLocalEulerAngles: {x: 0, y: 0, z: 0}
@@ -6990,5 +6695,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa8be2ef0ec14264584b89d2a9ae4305, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  partName: muscle
+  partName: Tensor tympani muscle
   snapThreshold: 0.1
