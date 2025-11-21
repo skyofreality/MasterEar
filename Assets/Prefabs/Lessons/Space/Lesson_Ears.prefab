@@ -808,7 +808,7 @@ GameObject:
   - component: {fileID: 7463434707816501296}
   - component: {fileID: 6109715158490205254}
   m_Layer: 0
-  m_Name: nerve
+  m_Name: Nerve
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -965,7 +965,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa8be2ef0ec14264584b89d2a9ae4305, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  partName: nerve
+  partName: Nerve
   snapThreshold: 0.1
 --- !u!1 &2499175490641339878
 GameObject:
@@ -1610,7 +1610,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data:
     name: internal jugular vein
-    detail: ' internal jugular vein'
+    detail: Internal juglar vein
   originalLocalPosition: {x: 0, y: 0, z: 0}
   originalLocalEulerAngles: {x: 0, y: 0, z: 0}
   originalLocalScale: {x: 0, y: 0, z: 0}
@@ -4358,7 +4358,7 @@ GameObject:
   - component: {fileID: 1973087153150118853}
   - component: {fileID: 8452590998061177562}
   m_Layer: 0
-  m_Name: nerve_botoom
+  m_Name: Nerve Bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4515,7 +4515,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa8be2ef0ec14264584b89d2a9ae4305, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  partName: nerve_botoom
+  partName: Nerve Bottom
   snapThreshold: 0.1
 --- !u!1 &7132857820623581764
 GameObject:
@@ -4761,21 +4761,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wholePart: {fileID: 0}
   partList:
-  - {fileID: 8296311831894109087}
+  - {fileID: 1716387693465913863}
   - {fileID: 7410324748762458511}
   - {fileID: 2670544029352689201}
-  - {fileID: 2633775673313906330}
+  - {fileID: 7102929136539193319}
+  - {fileID: 8296311831894109087}
   - {fileID: 8021690012303271515}
   - {fileID: 6669680713111954893}
+  - {fileID: 4283693944332918332}
+  - {fileID: 5597110849217802841}
   - {fileID: 801833938244738372}
-  - {fileID: 7183206001838770503}
   - {fileID: 7469783883375337822}
   - {fileID: 2728041709953771901}
   - {fileID: 1294228250098878376}
-  - {fileID: 7102929136539193319}
+  - {fileID: 1439065987493459343}
   - {fileID: 3342791725484093232}
-  - {fileID: 5597110849217802841}
-  - {fileID: 1716387693465913863}
+  - {fileID: 7183206001838770503}
+  - {fileID: 2633775673313906330}
   explosionForce: 0.1
   explosionDuration: 1
 --- !u!1 &7744219036914916667
@@ -5691,7 +5693,7 @@ GameObject:
   - component: {fileID: 549841091125173339}
   - component: {fileID: 5479683269844455569}
   m_Layer: 0
-  m_Name: muscle_top
+  m_Name: Muscle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5726,7 +5728,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data:
-    name: Muscle Top
+    name: Muscle
     detail: 
   originalLocalPosition: {x: 0, y: 0, z: 0}
   originalLocalEulerAngles: {x: 0, y: 0, z: 0}
@@ -5848,7 +5850,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa8be2ef0ec14264584b89d2a9ae4305, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  partName: muscle_top
+  partName: Muscle
   snapThreshold: 0.1
 --- !u!1 &8835005278352656822
 GameObject:

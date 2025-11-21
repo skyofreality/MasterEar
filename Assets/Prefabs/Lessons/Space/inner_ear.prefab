@@ -320,7 +320,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data:
     name: TympanicMembrane
-    detail: 
+    detail: The eardrum (tympanic membrane) is a thin membrane that vibrates in response
+      to sound waves, transmitting them to the middle ear bones.
   originalLocalPosition: {x: 0, y: 0, z: 0}
   originalLocalEulerAngles: {x: 0, y: 0, z: 0}
   originalLocalScale: {x: 0, y: 0, z: 0}
@@ -426,7 +427,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data:
     name: Malleus
-    detail: 
+    detail: "The malleus (hammer) is the first and largest ossicle in the middle
+      ear, measuring about 8\u20139 mm in length.\nIt connects the tympanic membrane
+      to the incus, transmitting sound vibrations inward toward the cochlea."
   originalLocalPosition: {x: 0, y: 0, z: 0}
   originalLocalEulerAngles: {x: 0, y: 0, z: 0}
   originalLocalScale: {x: 0, y: 0, z: 0}
@@ -1370,7 +1373,7 @@ GameObject:
   - component: {fileID: 4470476946779248841}
   - component: {fileID: 1540102797028008651}
   m_Layer: 0
-  m_Name: Labyrinth
+  m_Name: Cochlea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1406,7 +1409,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data:
-    name: Labyrinth
+    name: Cochlea
     detail: 
   originalLocalPosition: {x: 0, y: 0, z: 0}
   originalLocalEulerAngles: {x: 0, y: 0, z: 0}
@@ -2519,7 +2522,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data:
     name: Stapes
-    detail: 
+    detail: 'The stapes (stirrup) is the smallest bone in the human body and the
+      innermost ossicle of the middle ear.
+
+      It connects the long process of
+      the incus to the oval window of the inner ear, transmitting sound vibrations
+      from the middle ear to the cochlea.'
   originalLocalPosition: {x: 0, y: 0, z: 0}
   originalLocalEulerAngles: {x: 0, y: 0, z: 0}
   originalLocalScale: {x: 0, y: 0, z: 0}
@@ -2903,7 +2911,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data:
     name: Incus
-    detail: 
+    detail: 'The incus (anvil) is the second ossicle in the middle ear chain, linking
+      the malleus to the stapes.
+
+      It lies mainly in the epitympanum (attic)
+      and acts as a lever transmitting sound vibrations from the malleus handle to
+      the stapes footplate at the oval window.'
   originalLocalPosition: {x: 0, y: 0, z: 0}
   originalLocalEulerAngles: {x: 0, y: 0, z: 0}
   originalLocalScale: {x: 0, y: 0, z: 0}

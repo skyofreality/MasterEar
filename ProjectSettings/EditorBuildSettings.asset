@@ -8,22 +8,22 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Logo.unity
     guid: ca11e2ef1278dbe48bd25438b76555fd
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/home_page.unity
     guid: 2bd585eeaa7657c43a9be1376579ecff
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/outer_ear_menu.unity
     guid: f00dac84f8b950b44b6497deca315fe5
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/outer_ear_nerve_supply.unity
     guid: 0883e92f7b816f440805ba893e6ffcfe
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/outer_ear_prominences.unity
     guid: 3e320743efec55e49a8ddf5fd3f38729
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/middle_ear.unity
     guid: 4cf0b454babd7354994518773414f1a7
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/inner_ear_test.unity
     guid: aaaa1c2991eb6d244bcf7bb0858a951d
   - enabled: 1
