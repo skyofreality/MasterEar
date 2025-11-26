@@ -320,8 +320,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data:
     name: TympanicMembrane
-    detail: The eardrum (tympanic membrane) is a thin membrane that vibrates in response
-      to sound waves, transmitting them to the middle ear bones.
+    detail: 'Separates the external acoustic meatus from the middle ear cavity.
+
+      Acute
+      Otitis Media (AOM): Bulging and redness of the eardrum due to fluid/pus buildup,
+      causing pain and hearing loss. Perforation (tear) can lead to chronic infection.'
   originalLocalPosition: {x: 0, y: 0, z: 0}
   originalLocalEulerAngles: {x: 0, y: 0, z: 0}
   originalLocalScale: {x: 0, y: 0, z: 0}
@@ -1373,7 +1376,7 @@ GameObject:
   - component: {fileID: 4470476946779248841}
   - component: {fileID: 1540102797028008651}
   m_Layer: 0
-  m_Name: Cochlea
+  m_Name: 'Cochlear Duct '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1409,8 +1412,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data:
-    name: Cochlea
-    detail: 
+    name: 'Cochlear Duct '
+    detail: '<b>Function:</b>Contains the Organ of Corti (sensory epithelium) for
+      hearing.
+
+      Sensorineural Hearing Loss: Damage to the Organ of Corti or
+      the cochlear nerve, often caused by loud noise, toxins, or aging (Presbycusis).
+
+'
   originalLocalPosition: {x: 0, y: 0, z: 0}
   originalLocalEulerAngles: {x: 0, y: 0, z: 0}
   originalLocalScale: {x: 0, y: 0, z: 0}
@@ -2914,9 +2923,8 @@ MonoBehaviour:
     detail: 'The incus (anvil) is the second ossicle in the middle ear chain, linking
       the malleus to the stapes.
 
-      It lies mainly in the epitympanum (attic)
-      and acts as a lever transmitting sound vibrations from the malleus handle to
-      the stapes footplate at the oval window.'
+      Articulates with the head of the malleus
+      and the head of the stapes, acting as a lever.'
   originalLocalPosition: {x: 0, y: 0, z: 0}
   originalLocalEulerAngles: {x: 0, y: 0, z: 0}
   originalLocalScale: {x: 0, y: 0, z: 0}
