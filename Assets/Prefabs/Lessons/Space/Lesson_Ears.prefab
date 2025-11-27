@@ -52,7 +52,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data:
     name: Fat Top
-    detail: the yellow regions represent adipose tissue, which provides cushioning
+    detail: The yellow regions represent adipose tissue, which provides cushioning
       and structural support around the ear.
   originalLocalPosition: {x: 0, y: 0, z: 0}
   originalLocalEulerAngles: {x: 0, y: 0, z: 0}
@@ -600,8 +600,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data:
     name: 'Incus '
-    detail: The anvil (incus) and stirrup (stapes) are tiny bones in the middle ear
-      that help transmit sound vibrations from the eardrum to the inner ear.
+    detail: Articulates with the head of the malleus and the head of the stapes,
+      acting as a lever.
   originalLocalPosition: {x: 0, y: 0, z: 0}
   originalLocalEulerAngles: {x: 0, y: 0, z: 0}
   originalLocalScale: {x: 0, y: 0, z: 0}
@@ -721,8 +721,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data:
     name: Stapes
-    detail: The anvil (incus) and stirrup (stapes) are tiny bones in the middle ear
-      that help transmit sound vibrations from the eardrum to the inner ear.
+    detail: 'Stapes transmits vibrations to the oval window; Stapedius dampens loud
+      sounds '
   originalLocalPosition: {x: 0, y: 0, z: 0}
   originalLocalEulerAngles: {x: 0, y: 0, z: 0}
   originalLocalScale: {x: 0, y: 0, z: 0}
@@ -2552,7 +2552,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data:
     name: Cochlea
-    detail: Shaped like a snail shell, it contains the sensory organ of hearing.
+    detail: Contains the Organ of Corti (sensory epithelium) for hearings
   originalLocalPosition: {x: 0, y: 0, z: 0}
   originalLocalEulerAngles: {x: 0, y: 0, z: 0}
   originalLocalScale: {x: 0, y: 0, z: 0}

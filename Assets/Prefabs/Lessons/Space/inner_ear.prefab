@@ -1306,8 +1306,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data:
-    name: Vestibulocochleaar_3
-    detail: 
+    name: Vestibulocochlear n. (CN VIII)
+    detail: Sensory nerve for hearing and balance; travels through the Internal Acoustic
+      Meatus (IAM).
   originalLocalPosition: {x: 0, y: 0, z: 0}
   originalLocalEulerAngles: {x: 0, y: 0, z: 0}
   originalLocalScale: {x: 0, y: 0, z: 0}
@@ -2727,8 +2728,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data:
-    name: Vestibulocochleaar_2
-    detail: 
+    name: Vestibulocochlear n. (CN VIII), vestibular part
+    detail: Transmits balance information from the semicircular canals, utricle,
+      and saccule.
   originalLocalPosition: {x: 0, y: 0, z: 0}
   originalLocalEulerAngles: {x: 0, y: 0, z: 0}
   originalLocalScale: {x: 0, y: 0, z: 0}
@@ -3095,12 +3097,12 @@ Transform:
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 1
   m_Children:
-  - {fileID: 6571296096618723935}
   - {fileID: 7904883931289793631}
   - {fileID: 3110554072837215400}
   - {fileID: 7219618097201832222}
   - {fileID: 7858360726856787735}
   - {fileID: 7500854472797018886}
+  - {fileID: 6571296096618723935}
   - {fileID: 5848308191670574687}
   - {fileID: 3316819038644525761}
   m_Father: {fileID: 5244624367908252267}
@@ -3155,8 +3157,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data:
-    name: Vestibulocochleaar
-    detail: 
+    name: Facial Nerve
+    detail: Transmits auditory information from the cochlea to the brainstem.
   originalLocalPosition: {x: 0, y: 0, z: 0}
   originalLocalEulerAngles: {x: 0, y: 0, z: 0}
   originalLocalScale: {x: 0, y: 0, z: 0}
