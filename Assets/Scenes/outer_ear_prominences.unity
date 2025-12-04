@@ -23427,11 +23427,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 241a0a62168e83244a82896259aea469, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bodyText: '<b>Greater Auricle Nerve</b>
-
-    A nerve of the cervical plexus, it
-    supplies most of the outer medial surface of the auricle, the posterior part
-    of the lateral surface, and the postauricular region.'
+  bodyText: 
   sharedBodyText: {fileID: 1964192050}
 --- !u!114 &423093522
 MonoBehaviour:
@@ -34234,11 +34230,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 241a0a62168e83244a82896259aea469, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bodyText: '<b>Greater Auricle Nerve</b>
-
-    A nerve of the cervical plexus, it
-    supplies most of the outer medial surface of the auricle, the posterior part
-    of the lateral surface, and the postauricular region.'
+  bodyText: 
   sharedBodyText: {fileID: 1964192050}
 --- !u!114 &647111307
 MonoBehaviour:
@@ -34627,7 +34619,7 @@ Transform:
   m_GameObject: {fileID: 660798971}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: -0, y: 0.117, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -37107,11 +37099,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 241a0a62168e83244a82896259aea469, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bodyText: '<b>Greater Auricle Nerve</b>
-
-    A nerve of the cervical plexus, it
-    supplies most of the outer medial surface of the auricle, the posterior part
-    of the lateral surface, and the postauricular region.'
+  bodyText: 
   sharedBodyText: {fileID: 1964192050}
 --- !u!114 &735139994
 MonoBehaviour:
@@ -42432,11 +42420,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 241a0a62168e83244a82896259aea469, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bodyText: '<b>Greater Auricle Nerve</b>
-
-    A nerve of the cervical plexus, it
-    supplies most of the outer medial surface of the auricle, the posterior part
-    of the lateral surface, and the postauricular region.'
+  bodyText: 
   sharedBodyText: {fileID: 1964192050}
 --- !u!114 &828373862
 MonoBehaviour:
@@ -52151,7 +52135,7 @@ Transform:
   m_GameObject: {fileID: 1040684720}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.372, y: 1.0185, z: 0}
+  m_LocalPosition: {x: 0.372, y: 1.314017, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -53582,11 +53566,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 241a0a62168e83244a82896259aea469, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bodyText: '<b>Greater Auricle Nerve</b>
-
-    A nerve of the cervical plexus, it
-    supplies most of the outer medial surface of the auricle, the posterior part
-    of the lateral surface, and the postauricular region.'
+  bodyText: 
   sharedBodyText: {fileID: 1964192050}
 --- !u!114 &1066558925
 MonoBehaviour:
@@ -56077,11 +56057,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 241a0a62168e83244a82896259aea469, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bodyText: '<b>Greater Auricle Nerve</b>
-
-    A nerve of the cervical plexus, it
-    supplies most of the outer medial surface of the auricle, the posterior part
-    of the lateral surface, and the postauricular region.'
+  bodyText: 
   sharedBodyText: {fileID: 1964192050}
 --- !u!114 &1123168399
 MonoBehaviour:
@@ -62679,11 +62655,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 241a0a62168e83244a82896259aea469, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bodyText: '<b>Greater Auricle Nerve</b>
-
-    A nerve of the cervical plexus, it
-    supplies most of the outer medial surface of the auricle, the posterior part
-    of the lateral surface, and the postauricular region.'
+  bodyText: 
   sharedBodyText: {fileID: 1964192050}
 --- !u!114 &1316475720
 MonoBehaviour:
@@ -80673,7 +80645,7 @@ Transform:
   m_GameObject: {fileID: 1501037398}
   serializedVersion: 2
   m_LocalRotation: {x: -0.4999827, y: 0.50001734, z: 0.50001806, w: 0.499982}
-  m_LocalPosition: {x: -0.0041777585, y: 0.9364829, z: 0.254}
+  m_LocalPosition: {x: -0.0041777585, y: 1.3, z: 0.254}
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -83244,11 +83216,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 241a0a62168e83244a82896259aea469, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bodyText: '<b>Greater Auricle Nerve</b>
-
-    A nerve of the cervical plexus, it
-    supplies most of the outer medial surface of the auricle, the posterior part
-    of the lateral surface, and the postauricular region.'
+  bodyText: 
   sharedBodyText: {fileID: 1964192050}
 --- !u!114 &1546502506
 MonoBehaviour:
@@ -86107,11 +86075,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 241a0a62168e83244a82896259aea469, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bodyText: '<b>Greater Auricle Nerve</b>
-
-    A nerve of the cervical plexus, it
-    supplies most of the outer medial surface of the auricle, the posterior part
-    of the lateral surface, and the postauricular region.'
+  bodyText: 
   sharedBodyText: {fileID: 1964192050}
 --- !u!114 &1629459386
 MonoBehaviour:
@@ -87761,11 +87725,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 241a0a62168e83244a82896259aea469, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bodyText: '<b>Greater Auricle Nerve</b>
-
-    A nerve of the cervical plexus, it
-    supplies most of the outer medial surface of the auricle, the posterior part
-    of the lateral surface, and the postauricular region.'
+  bodyText: 
   sharedBodyText: {fileID: 1964192050}
 --- !u!114 &1670030906
 MonoBehaviour:
@@ -89444,11 +89404,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 241a0a62168e83244a82896259aea469, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bodyText: '<b>Greater Auricle Nerve</b>
-
-    A nerve of the cervical plexus, it
-    supplies most of the outer medial surface of the auricle, the posterior part
-    of the lateral surface, and the postauricular region.'
+  bodyText: 
   sharedBodyText: {fileID: 1964192050}
 --- !u!114 &1696835976
 MonoBehaviour:
@@ -106433,7 +106389,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -0.389, y: 1.2661}
+  m_AnchoredPosition: {x: -0.389, y: 1.664}
   m_SizeDelta: {x: 23.8004, y: 9.4882}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2065966268
