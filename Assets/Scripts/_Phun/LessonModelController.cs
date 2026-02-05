@@ -191,28 +191,33 @@ namespace NudleNexus.Classroom
         }
 
         // Ensure that the explosion positions are cleared when model is reset
-        public void ResetModel()
-        {
-            // Reset the exploded view if applicable
+        public void ResetModel() {
             ResetExplosion();
-            foreach (var part in partList)
-            {
-                if (originalPartScales.TryGetValue(part, out Vector3 originalScale))
-                {
-                    part.transform.localScale = originalScale; // Reset scale instantly
+
+            foreach (var part in partList) {
+                if (originalPartScales.TryGetValue(part, out Vector3 originalScale)) {
+                    part.transform.localScale = originalScale;
                 }
             }
 
-            // Reset position, rotation, and scale
             transform.localPosition = Vector3.zero;
             transform.localRotation = Quaternion.identity;
-            transform.localScale = originalScale;  // Ensure originalScale is set in LessonModelController
+            transform.localScale = originalScale;
 
-            // Reset other custom states as needed, for example, exploded state
             isExploded = false;
+
+            ResetAllSnapParts();
 
             Debug.Log("Model has been reset.");
         }
+
+        void ResetAllSnapParts() {
+            var snapHandlers = GetComponentsInChildren<SnapHandler>(true);
+            foreach (var snapHandler in snapHandlers) {
+                snapHandler.ResetSnapState();
+            }
+        }
+
 
         public PickablePart GetPartByIndex(int index)
         {

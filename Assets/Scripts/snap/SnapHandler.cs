@@ -9,10 +9,14 @@ public class SnapHandler : MonoBehaviour {
 
     private Vector3 originalPosition;
     private Quaternion originalRotation;
+    private Rigidbody rb;
+    private Collider cachedCollider;
 
     private void Start() {
         originalPosition = transform.position;
         originalRotation = transform.rotation;
+        rb = GetComponent<Rigidbody>();
+        cachedCollider = GetComponent<Collider>();
     }
 
     private void OnTriggerStay(Collider other) {
@@ -34,38 +38,44 @@ public class SnapHandler : MonoBehaviour {
     private void SnapToTarget(Transform targetTransform) {
         if (isSnapped) return;
 
-        Debug.Log($"Snapping to: {targetTransform.name}");
         isSnapped = true;
 
-        var rb = GetComponent<Rigidbody>();
         if (rb != null) {
             rb.isKinematic = true;
             rb.linearVelocity = Vector3.zero;
             rb.angularVelocity = Vector3.zero;
-            Debug.Log(" Rigidbody kinematic & stopped");
         }
 
-        Collider col = GetComponent<Collider>();
-        if (col != null)
-            col.enabled = false;
+        if (cachedCollider != null)
+            cachedCollider.enabled = false;
 
-        // Animate position and rotation to target
-        float duration = 0.5f;
-
-        transform.DOMove(targetTransform.position, duration).SetEase(Ease.InOutSine);
-        transform.DORotateQuaternion(targetTransform.rotation, duration).SetEase(Ease.InOutSine);
-
-        // Optional: Add scaling or slight delay if needed
+        transform.DOMove(targetTransform.position, 0.5f).SetEase(Ease.InOutSine);
+        transform.DORotateQuaternion(targetTransform.rotation, 0.5f).SetEase(Ease.InOutSine);
 
         ScoreManager.Instance?.AddPoints(10);
     }
-
-
 
     public void ResetIfNotSnapped() {
         if (!isSnapped) {
             transform.position = originalPosition;
             transform.rotation = originalRotation;
+        }
+    }
+
+    public void ResetSnapState() {
+        isSnapped = false;
+
+        transform.position = originalPosition;
+        transform.rotation = originalRotation;
+
+        if (rb != null) {
+            rb.isKinematic = false;
+            rb.linearVelocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero;
+        }
+
+        if (cachedCollider != null) {
+            cachedCollider.enabled = true;
         }
     }
 }

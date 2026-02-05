@@ -348,18 +348,16 @@ namespace NudleNexus.Classroom
             }
         }
 
-        public void ResetModel()
-        {
-            if (currentModel != null)
-            {
+        public void ResetModel() {
+            if (currentModel != null) {
                 currentModel.ResetModel();  // Call ResetModel on the current model
-                Debug.Log("Model reset.");
-            }
-            else
-            {
+                ScoreManager.Instance?.ResetScore();
+                Debug.Log("Model and score reset.");
+            } else {
                 Debug.LogError("Current model is null.");
             }
         }
+
 
         void OnDestroy()
         {
