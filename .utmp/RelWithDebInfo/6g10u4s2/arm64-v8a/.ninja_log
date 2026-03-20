@@ -71,3 +71,30 @@
 180	7941	7957074291513099	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	1580bbfbc154aeec
 55	8260	7957074294603459	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	d2689f41cb76f680
 8261	8822	7957074300246723	D:/Master's Development/MasterEar/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/6g10u4s2/obj/arm64-v8a/libgame.so	60cddd96d74399f2
+75	2908	7957188389899304	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	c7c70cfa84e05e2a
+4	2984	7957188390675416	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	9ef2350bc73bfe50
+95	3090	7957188391474910	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	2fb215502a5d40ed
+41	3296	7957188393910467	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	9c94c8a56347b212
+117	3322	7957188394198737	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	5a388fddda91a292
+16	3406	7957188395085710	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	a1886c01409ac1f
+56	3676	7957188397735425	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	1580bbfbc154aeec
+28	3933	7957188400355248	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	d2689f41cb76f680
+3933	4319	7957188404371002	D:/Master's Development/MasterEar/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/6g10u4s2/obj/arm64-v8a/libgame.so	60cddd96d74399f2
+23	1991	7957191101125624	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	9ef2350bc73bfe50
+14	2001	7957191101125624	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	9c94c8a56347b212
+52	2065	7957191101829080	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	c7c70cfa84e05e2a
+41	2173	7957191103055684	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	2fb215502a5d40ed
+78	2286	7957191104175674	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	5a388fddda91a292
+31	2470	7957191105969964	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	a1886c01409ac1f
+65	2797	7957191109436694	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	1580bbfbc154aeec
+4	2930	7957191110654144	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	d2689f41cb76f680
+2930	3148	7957191112964751	D:/Master's Development/MasterEar/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/6g10u4s2/obj/arm64-v8a/libgame.so	60cddd96d74399f2
+59	5526	7957196178686124	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	9c94c8a56347b212
+29	5530	7957196179743252	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	9ef2350bc73bfe50
+107	5595	7957196181673362	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	c7c70cfa84e05e2a
+74	6031	7957196186456061	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	2fb215502a5d40ed
+124	6294	7957196187986081	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	5a388fddda91a292
+10	6629	7957196192739362	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	a1886c01409ac1f
+91	7434	7957196200700507	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	1580bbfbc154aeec
+44	7775	7957196204174539	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	d2689f41cb76f680
+7775	8042	7957196206964431	D:/Master's Development/MasterEar/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/6g10u4s2/obj/arm64-v8a/libgame.so	60cddd96d74399f2

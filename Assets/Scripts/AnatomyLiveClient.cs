@@ -12,6 +12,10 @@ using UnityEngine.Android;
 
 public class AnatomyLiveClient : MonoBehaviour
 {
+    public event Action<string> ContextUpdated;
+    public event Action<string> QuestionSent;
+    public event Action TeacherTurnCompleted;
+
     public enum TeacherPersonalityPreset
     {
         FriendlyTeacher,
@@ -70,6 +74,7 @@ public class AnatomyLiveClient : MonoBehaviour
     private bool suppressReconnect;
     private string currentSelectedObject = "";
     public bool IsConnected { get; private set; }
+    public string CurrentSelectedObject => currentSelectedObject;
 
     [Serializable]
     private class OutboundPacket
@@ -356,6 +361,7 @@ public class AnatomyLiveClient : MonoBehaviour
                 else if (evt != null && evt.type == "turn_complete")
                 {
                     SetConnectionStatus("Connected - ready");
+                    TeacherTurnCompleted?.Invoke();
                 }
                 else if (evt != null && (evt.type == "text" || evt.type == "output_transcription" || evt.type == "input_transcription"))
                 {
@@ -506,6 +512,7 @@ public class AnatomyLiveClient : MonoBehaviour
 
         string contextJson = JsonUtility.ToJson(packet);
         await websocket.SendText(contextJson);
+        ContextUpdated?.Invoke(currentSelectedObject);
         Debug.Log($"[AnatomyLiveClient] Sent context: {currentSelectedObject}");
     }
 
@@ -538,6 +545,7 @@ public class AnatomyLiveClient : MonoBehaviour
         }
 
         SetConnectionStatus("Question sent");
+        QuestionSent?.Invoke(trimmedQuestion);
         await websocket.SendText(JsonUtility.ToJson(packet));
     }
 
