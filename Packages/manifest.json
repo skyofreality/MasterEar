@@ -1,9 +1,14 @@
 {
   "dependencies": {
-    "com.eflatun.scenereference": "git+https://github.com/starikcetin/Eflatun.SceneReference.git#upm",
-    "com.justinpbarnett.unity-mcp": "https://github.com/justinpbarnett/unity-mcp.git",
-    "com.meta.xr.sdk.all": "71.0.0",
-    "com.srcnalt.openai-unity": "https://github.com/srcnalt/OpenAI-Unity.git",
+    "com.endel.nativewebsocket": "https://github.com/endel/NativeWebSocket.git#upm",
+    "com.meta.xr.mrutilitykit": "71.0.0",
+    "com.meta.xr.sdk.audio": "71.0.0",
+    "com.meta.xr.sdk.core": "71.0.0",
+    "com.meta.xr.sdk.haptics": "71.0.0",
+    "com.meta.xr.sdk.interaction": "71.0.0",
+    "com.meta.xr.sdk.interaction.ovr": "71.0.0",
+    "com.meta.xr.sdk.platform": "71.0.0",
+    "com.meta.xr.simulator": "71.0.0",
     "com.unity.2d.sprite": "1.0.0",
     "com.unity.ai.navigation": "2.0.4",
     "com.unity.collab-proxy": "2.5.2",

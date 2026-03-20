@@ -4,6 +4,7 @@ public class ModelLoader : MonoBehaviour
 {
     // Public variable to assign the 3D model prefab
     public GameObject modelPrefab;
+    public AnatomyLiveClient liveClient;
 
     // Position to instantiate the model prefab
     public Vector3 spawnPosition = new Vector3(0, 1, 0);
@@ -19,6 +20,20 @@ public class ModelLoader : MonoBehaviour
         {
             // Instantiate the prefab at the specified position and rotation
             GameObject modelInstance = Instantiate(modelPrefab, spawnPosition, Quaternion.Euler(spawnRotation));
+
+            if (liveClient == null)
+            {
+                liveClient = FindObjectOfType<AnatomyLiveClient>();
+            }
+
+            if (liveClient != null)
+            {
+                AnatomyPartContextSender[] contextSenders = modelInstance.GetComponentsInChildren<AnatomyPartContextSender>(true);
+                foreach (AnatomyPartContextSender sender in contextSenders)
+                {
+                    sender.SetLiveClient(liveClient);
+                }
+            }
 
             // Ensure the instantiated prefab is active
             if (!modelInstance.activeSelf)

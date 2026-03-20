@@ -1,27 +1,15 @@
 {
   "dependencies": {
-    "com.eflatun.scenereference": {
-      "version": "git+https://github.com/starikcetin/Eflatun.SceneReference.git#upm",
+    "com.endel.nativewebsocket": {
+      "version": "https://github.com/endel/NativeWebSocket.git#upm",
       "depth": 0,
       "source": "git",
-      "dependencies": {
-        "com.unity.settings-manager": "2.0.1",
-        "com.unity.nuget.newtonsoft-json": "3.0.2"
-      },
-      "hash": "b849990020c30ac6ead4e4fb4881428f86dcde0d"
-    },
-    "com.justinpbarnett.unity-mcp": {
-      "version": "https://github.com/justinpbarnett/unity-mcp.git",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {
-        "com.unity.nuget.newtonsoft-json": "3.0.2"
-      },
-      "hash": "be47f39b12f4e6b658207a40149e956d90eda2a7"
+      "dependencies": {},
+      "hash": "ea014c9ae534d56111962d96f89f8a046e302dc9"
     },
     "com.meta.xr.mrutilitykit": {
       "version": "71.0.0",
-      "depth": 1,
+      "depth": 0,
       "source": "registry",
       "dependencies": {
         "com.meta.xr.sdk.core": "71.0.0",
@@ -31,40 +19,23 @@
       },
       "url": "https://packages.unity.com"
     },
-    "com.meta.xr.sdk.all": {
-      "version": "71.0.0",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {
-        "com.meta.xr.sdk.core": "71.0.0",
-        "com.meta.xr.sdk.audio": "71.0.0",
-        "com.meta.xr.sdk.voice": "71.0.0",
-        "com.meta.xr.simulator": "71.0.0",
-        "com.meta.xr.sdk.haptics": "71.0.0",
-        "com.meta.xr.mrutilitykit": "71.0.0",
-        "com.meta.xr.sdk.platform": "71.0.0",
-        "com.meta.xr.sdk.interaction": "71.0.0",
-        "com.meta.xr.sdk.interaction.ovr": "71.0.0"
-      },
-      "url": "https://packages.unity.com"
-    },
     "com.meta.xr.sdk.audio": {
       "version": "71.0.0",
-      "depth": 1,
+      "depth": 0,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
     "com.meta.xr.sdk.core": {
       "version": "71.0.0",
-      "depth": 1,
+      "depth": 0,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
     "com.meta.xr.sdk.haptics": {
       "version": "71.0.0",
-      "depth": 1,
+      "depth": 0,
       "source": "registry",
       "dependencies": {
         "com.meta.xr.sdk.core": "71.0.0"
@@ -73,7 +44,7 @@
     },
     "com.meta.xr.sdk.interaction": {
       "version": "71.0.0",
-      "depth": 1,
+      "depth": 0,
       "source": "registry",
       "dependencies": {
         "com.unity.ugui": "1.0.0",
@@ -83,7 +54,7 @@
     },
     "com.meta.xr.sdk.interaction.ovr": {
       "version": "71.0.0",
-      "depth": 1,
+      "depth": 0,
       "source": "registry",
       "dependencies": {
         "com.meta.xr.sdk.core": "71.0.0",
@@ -93,37 +64,21 @@
     },
     "com.meta.xr.sdk.platform": {
       "version": "71.0.0",
-      "depth": 1,
+      "depth": 0,
       "source": "registry",
       "dependencies": {
         "com.unity.ugui": "1.0.0"
       },
       "url": "https://packages.unity.com"
     },
-    "com.meta.xr.sdk.voice": {
-      "version": "71.0.0",
-      "depth": 1,
-      "source": "registry",
-      "dependencies": {},
-      "url": "https://packages.unity.com"
-    },
     "com.meta.xr.simulator": {
       "version": "71.0.0",
-      "depth": 1,
+      "depth": 0,
       "source": "registry",
       "dependencies": {
         "com.unity.editorcoroutines": "1.0.0"
       },
       "url": "https://packages.unity.com"
-    },
-    "com.srcnalt.openai-unity": {
-      "version": "https://github.com/srcnalt/OpenAI-Unity.git",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {
-        "com.unity.nuget.newtonsoft-json": "3.2.1"
-      },
-      "hash": "054467e2a2daccf7f23ff8f7165f1d832815dc70"
     },
     "com.unity.2d.sprite": {
       "version": "1.0.0",
@@ -171,7 +126,7 @@
     },
     "com.unity.editorcoroutines": {
       "version": "1.0.0",
-      "depth": 2,
+      "depth": 1,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
@@ -298,13 +253,6 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
-    "com.unity.settings-manager": {
-      "version": "2.0.1",
-      "depth": 1,
-      "source": "registry",
-      "dependencies": {},
-      "url": "https://packages.unity.com"
-    },
     "com.unity.shadergraph": {
       "version": "17.0.3",
       "depth": 1,
@@ -337,7 +285,7 @@
     },
     "com.unity.textmeshpro": {
       "version": "3.0.6",
-      "depth": 2,
+      "depth": 1,
       "source": "builtin",
       "dependencies": {
         "com.unity.ugui": "2.0.0"
