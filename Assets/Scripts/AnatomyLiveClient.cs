@@ -42,6 +42,24 @@ public class AnatomyLiveClient : MonoBehaviour
     private Queue<float> audioOutputBuffer = new Queue<float>();
     private AudioClip dynamicOutputClip;
     private int outputSampleRate = 24000;
+    private float lastReceivedTeacherAudioTime = -999f;
+    public bool IsTeacherAudioActive
+    {
+        get
+        {
+            lock (audioOutputBuffer)
+            {
+                if (audioOutputBuffer.Count > 0)
+                {
+                    return true;
+                }
+            }
+
+            return teacherAudioSource != null &&
+                   teacherAudioSource.isPlaying &&
+                   (Time.unscaledTime - lastReceivedTeacherAudioTime) < 0.2f;
+        }
+    }
 
     [Serializable]
     private class BackendEvent
@@ -355,6 +373,7 @@ public class AnatomyLiveClient : MonoBehaviour
                     {
                         audioOutputBuffer.Clear();
                     }
+                    lastReceivedTeacherAudioTime = -999f;
                     teacherAudioSource.Stop();
                     Debug.Log("[AnatomyLiveClient] Gemini interrupted. Cleared playback buffer.");
                 }
@@ -389,6 +408,7 @@ public class AnatomyLiveClient : MonoBehaviour
                 {
                     foreach (var f in audioFloats) audioOutputBuffer.Enqueue(f);
                 }
+                lastReceivedTeacherAudioTime = Time.unscaledTime;
 
                 if (teacherAudioSource != null && !teacherAudioSource.isPlaying)
                 {
@@ -595,8 +615,9 @@ public class AnatomyLiveClient : MonoBehaviour
         {
             personalityDropdown.ClearOptions();
             personalityDropdown.AddOptions(
-                Enum.GetNames(typeof(TeacherPersonalityPreset))
-                    .Select(FormatEnumLabel)
+                Enum.GetValues(typeof(TeacherPersonalityPreset))
+                    .Cast<TeacherPersonalityPreset>()
+                    .Select(GetPersonalityDisplayName)
                     .ToList()
             );
         }
@@ -619,6 +640,24 @@ public class AnatomyLiveClient : MonoBehaviour
         }
 
         personalityDropdown.SetValueWithoutNotify(personalityIndex);
+    }
+
+    private static string GetPersonalityDisplayName(TeacherPersonalityPreset preset)
+    {
+        switch (preset)
+        {
+            case TeacherPersonalityPreset.QuizTeacher:
+                return "Quiz Instructor";
+            case TeacherPersonalityPreset.ExamCoach:
+                return "Exam Coach";
+            case TeacherPersonalityPreset.BeginnerGuide:
+                return "Beginner Guide";
+            case TeacherPersonalityPreset.SocraticTutor:
+                return "Socratic Tutor";
+            case TeacherPersonalityPreset.FriendlyTeacher:
+            default:
+                return "Friendly Instructor";
+        }
     }
 
     private static string FormatEnumLabel(string rawValue)

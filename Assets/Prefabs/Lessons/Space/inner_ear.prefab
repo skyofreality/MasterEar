@@ -1306,7 +1306,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data:
-    name: Vestibulocochlear n. (CN VIII)
+    name: Vestibulocochlear Nerve (CN VIII)
     detail: Sensory nerve for hearing and balance; travels through the Internal Acoustic
       Meatus (IAM).
   originalLocalPosition: {x: 0, y: 0, z: 0}
@@ -2728,7 +2728,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data:
-    name: Vestibulocochlear n. (CN VIII), vestibular part
+    name: Vestibular Nerve
     detail: Transmits balance information from the semicircular canals, utricle,
       and saccule.
   originalLocalPosition: {x: 0, y: 0, z: 0}
@@ -3157,7 +3157,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data:
-    name: Facial Nerve
+    name: Cochlear Nerve
     detail: Transmits auditory information from the cochlea to the brainstem.
   originalLocalPosition: {x: 0, y: 0, z: 0}
   originalLocalEulerAngles: {x: 0, y: 0, z: 0}
