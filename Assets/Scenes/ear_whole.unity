@@ -38998,7 +38998,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f7c18d18d87bee45ada4e2a25541e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trackingHand: {fileID: 0}
+  trackingHand: {fileID: 563364986}
   minFingerPinchStrength: 0.5
   minDistanceBeforeNewPoint: 0.004
   tubeDefaultWidth: 0.0045
@@ -45760,7 +45760,6 @@ MonoBehaviour:
   _objects:
   - {fileID: 698768226}
   - {fileID: 730269768}
-  - {fileID: 1749456429}
   _passThroughText: {fileID: 524534548}
   _locomotionInteractable: {fileID: 1247444047}
   _passThroughInteractable: {fileID: 158998553}
@@ -93466,6 +93465,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: co_lab_interior
       objectReference: {fileID: 0}
+    - target: {fileID: -6689036041284674117, guid: e878e5e47a3d66a498582ac2b6692c6e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -5763168453154023336, guid: e878e5e47a3d66a498582ac2b6692c6e, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -123708,11 +123711,6 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
---- !u!1 &1749456429 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -6689036041284674117, guid: e878e5e47a3d66a498582ac2b6692c6e, type: 3}
-  m_PrefabInstance: {fileID: 1388505947}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1751982569
 GameObject:
   m_ObjectHideFlags: 0
