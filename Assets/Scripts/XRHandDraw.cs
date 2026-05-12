@@ -13,6 +13,8 @@ public class XRHandDraw : MonoBehaviour {
     [SerializeField] private int tubeSides = 8;
     [SerializeField] private Color defaultColor = Color.white;
     [SerializeField] private Material defaultLineMaterial;
+    [SerializeField] private GameObject drawingOptionsPanel;
+    [SerializeField] private bool showDrawingOptionsWithDrawing = true;
 
     [Header("Behavior Settings")]
     [SerializeField] private bool enableGravity = false;
@@ -191,7 +193,20 @@ public class XRHandDraw : MonoBehaviour {
 
     public void ToggleDrawing() {
         isDrawingEnabled = !isDrawingEnabled;
+        UpdateDrawingOptionsPanel();
         Debug.Log("Drawing " + (isDrawingEnabled ? "Enabled" : "Disabled"));
+    }
+
+    public void SetDrawingEnabled(bool isEnabled) {
+        isDrawingEnabled = isEnabled;
+        UpdateDrawingOptionsPanel();
+        Debug.Log("Drawing " + (isDrawingEnabled ? "Enabled" : "Disabled"));
+    }
+
+    private void UpdateDrawingOptionsPanel() {
+        if (drawingOptionsPanel != null && showDrawingOptionsWithDrawing) {
+            drawingOptionsPanel.SetActive(isDrawingEnabled);
+        }
     }
 
     public void UpdateLineColor(Color color) {
