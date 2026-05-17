@@ -7,6 +7,8 @@ using UnityEngine;
 
 public class AnatomyPartChecklistTracker : MonoBehaviour
 {
+    public event Action<AnatomyPartChecklistTracker> ObjectivesCompleted;
+
     [Header("Checklist Settings")]
     public string[] trackedParts = Array.Empty<string>();
     public bool trackUnlistedPartsWhenEmpty = true;
@@ -22,6 +24,7 @@ public class AnatomyPartChecklistTracker : MonoBehaviour
     private readonly HashSet<string> completedPartKeys = new HashSet<string>();
     private readonly List<string> orderedPartKeys = new List<string>();
     private readonly Dictionary<string, string> displayNameByKey = new Dictionary<string, string>();
+    private bool hasRaisedObjectivesCompleted;
 
     public int CompletedCount => completedPartKeys.Count;
     public int TotalCount => orderedPartKeys.Count;
@@ -50,6 +53,7 @@ public class AnatomyPartChecklistTracker : MonoBehaviour
         completedPartKeys.Clear();
         orderedPartKeys.Clear();
         displayNameByKey.Clear();
+        hasRaisedObjectivesCompleted = false;
 
         if (trackedParts == null)
         {
@@ -76,6 +80,7 @@ public class AnatomyPartChecklistTracker : MonoBehaviour
     public void ResetChecklist()
     {
         completedPartKeys.Clear();
+        hasRaisedObjectivesCompleted = false;
         RefreshUI();
     }
 
@@ -130,6 +135,7 @@ public class AnatomyPartChecklistTracker : MonoBehaviour
         }
 
         RefreshUI();
+        RaiseCompletionIfReady();
     }
 
     private void RefreshUI()
@@ -149,6 +155,22 @@ public class AnatomyPartChecklistTracker : MonoBehaviour
             completionText.text = IsComplete
                 ? "Objective complete: all target anatomy parts explored."
                 : "Objective: interact with all target anatomy parts.";
+        }
+    }
+
+    private void RaiseCompletionIfReady()
+    {
+        if (hasRaisedObjectivesCompleted || !IsComplete)
+        {
+            return;
+        }
+
+        hasRaisedObjectivesCompleted = true;
+        ObjectivesCompleted?.Invoke(this);
+
+        if (logChecklistUpdates)
+        {
+            Debug.Log("[AnatomyPartChecklistTracker] All target objectives completed.");
         }
     }
 
